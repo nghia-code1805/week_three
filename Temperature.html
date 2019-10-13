@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyển đổi</title>
+</head>
+<body>
+    <script>
+        function chuyenDoi(C) {
+            this.doC = C;
+            this.doCsangF = function () {
+                return this.doC * 33.8;
+            }
+            this.doCsangk=function () {
+                return this.doC*274.15;
+            }
+        }
+        var ketqua=new chuyenDoi(4);
+        var input=ketqua.doCsangF();
+        var input01=ketqua.doCsangk();
+        document.write("từ c sang f="+input+" từ c sang k="+input01);
+    </script>
+</body>
+</html>

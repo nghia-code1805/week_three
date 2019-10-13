@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hàm 02</title>
+</head>
+<!--<body>-->
+<!--    bình phương-->
+<!--    <input oninput="binhphuong(this.value)" type="number">-->
+<!--    <div id="output"></div>-->
+<!--    <script>-->
+<!--        function binhphuong(number) {-->
+<!--            number=parseInt(number);-->
+<!--            document.getElementById("output").innerHTML="kết quả :"+number*number;-->
+<!--        }-->
+<!--    </script>-->
+<!--</body>-->
+
+<!--<body>-->
+<!--    bán kính:-->
+<!--    <input oninput="bankinh(this.value)" type="number">-->
+<!--    <br>-->
+<!--    <span>dien tich:</span><div id="dientich"></div>-->
+<!--    <span>chu vi:</span><div id="chuvi"></div>-->
+<!--    <script>-->
+<!--        function bankinh(number) {-->
+<!--            number=parseInt(number);-->
+<!--            var pi=3.14;-->
+<!--            document.getElementById("dientich").innerHTML=number*number*pi;-->
+<!--            document.getElementById("chuvi").innerHTML=number*2*pi;-->
+<!--        }-->
+<!--    </script>-->
+<!--</body>-->
+
+<body>
+
+<!--    <script>-->
+<!--        function daithua(n) {-->
+<!--            for (var i=1;i<=n;i++)-->
+<!--            {-->
+<!--                f=f*i;-->
+<!--            }-->
+<!--            return f;-->
+<!--        }-->
+<!--        var f=1;-->
+<!--        let input=prompt("enter a n!");-->
+<!--        a=daithua(input);-->
+<!--        alert(a);-->
+<!--    </script>-->
+
+<!--    <input type="number" oninput="giaithua(this.value)">-->
+<!--    <div id="output"></div>-->
+<!--    <script>-->
+<!--        //bài 3-->
+<!--        function giaithua(number) {-->
+<!--            var x=1;-->
+<!--            for (var i=1;i<=number;i++)-->
+<!--            {-->
+<!--                x=x*i;-->
+<!--            }-->
+<!--            document.getElementById("output").innerHTML=x;-->
+<!--        }-->
+<!--    </script>-->
+
+    <script>
+            // bài 4
+       //  function axa(n) {
+       //      if (isNaN(n)==false)
+       //      {
+       //          return true;
+       //      }else {
+       //          return false;
+       //      }
+       //  }
+       //  let input=prompt("enter a");
+       // let result = axa(input);
+       //  alert(result);
+
+        //bài 5
+
+        // function kiemtra(n) {
+        //     //var n=so01,so02,so03;
+        //     var min = n[0];
+        //     for (var i = 0; i < n.length; i++) {
+        //         if (min > n[i]) {
+        //             min = n[i];
+        //         } else {
+        //             return min;
+        //         }
+        //     }
+        // }
+        //     var so01=prompt("enter 01");
+        //     var so02=prompt("enter 02");
+        //     var so03=prompt("enter 03");
+        //     let a=kiemtra(so01,so02,so03);
+        //     alert("min="+a);
+
+        // bài 6
+
+        // function kiemtra(n) {
+        //     if (n>0)
+        //     {
+        //         return true
+        //     }
+        //     else {
+        //         return false;
+        //     }
+        // }
+        // var input = prompt("enter a number");
+        // var output=kiemtra(input);
+        // alert(output);
+
+        //bài 8
+        // function kiemtra() {
+        //     var firs=0;
+        //     var list=input.length-1;
+        //     while (firs<list)
+        //     {
+        //        var middlemen=input[firs];
+        //         input[firs]=input[list];
+        //         input[list]=middlemen;
+        //         firs++;
+        //         list--;
+        //     }
+        //     return input;
+        // }
+        // var input=[2,4,5,1,7,9];
+        // var output=kiemtra(input);
+        // alert(output);
+
+        // bài 7
+        function check() {
+            var fi=0;
+            var li=input.length-1;
+            while (fi<li)
+            {
+                var midd=input[fi];
+                input[fi]=input[li];
+                input[li]=midd;
+                fi++;
+                li--;
+            }
+            return input;
+        }
+        var input01=prompt("enter a number");
+        var input02=prompt("enter a number02");
+        var output01=check(input01);
+        var output02=check(input01);
+        alert(output01+output02);
+    </script>
+</body>
+</html>

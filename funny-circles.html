@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1325px" height="600px" style="border: 2px solid red"></canvas>
+<script>
+    // tọa độ cố định
+    function circle1(x,y,radius) {
+        this.x=x;
+        this.y=y;
+        this.radius=radius;
+    }
+    // trả về ngẫu nhiên trong khoảng từ 0-255
+    function getRandomHex() {
+        return Math.floor(Math.random()*255);//Math.floor()
+    }
+    // chọn màu sắc ngẫu nhiên
+    function getRandomColor() {
+        var red=getRandomHex();
+        var green=getRandomHex();
+        var blue=getRandomHex();
+        return "rgb("+red+","+blue+","+green+")";
+    }
+    function createCircle() {
+        var ctx=document.getElementById("myCanvas").getContext("2d");//khai báo ctx gán id & hình 2d
+        var radius=Math.floor(Math.random()*80);//khai báo bán kính ngẫu nhiên
+        var circle=new circle1(500,500,radius);
+        var x=Math.random()*window.innerWidth;//vẽ hình tròn ngẫu nhiên với tọa độ x,y trên màn hình window
+        var y=Math.random()*window.innerHeight;
+        var circle=new circle1(x,y,radius);
+        ctx.beginPath();
+        ctx.arc(circle.x,circle.y,circle.radius,0,2*Math.PI);
+        ctx.fillStyle=getRandomColor();
+        ctx.fill();
+    }
+    createCircle();
+    // số lượng hình tròn trong myCanvas
+    function createMultyp() {
+        for (var i=0;i<150;i++)
+        {
+            createCircle();
+        }
+    }
+    createMultyp();
+</script>
+</body>
+</html>

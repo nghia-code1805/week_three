@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyen doi</title>
+</head>
+<body>
+    <p>
+        Feet <input id="feet" oninput="feet(this.value)">
+        <div id="outputfeet"></div>
+    </p>
+    <p>
+        Meters <input id="meters" oninput="meters(this.value)">
+        <div id="outputmeters"></div>
+    </p>
+    <script>
+        function feet(inputfeet) {
+            inputfeet=parseInt(inputfeet);
+            document.getElementById("outputfeet").innerHTML=0.305*inputfeet;
+        }
+        function meters(inputmeters) {
+            inputmeters=parseInt(inputmeters);
+            document.getElementById("outputmeters").innerHTML=3.279*inputmeters;
+        }
+    </script>
+</body>
+</html>

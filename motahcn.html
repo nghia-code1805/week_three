@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HÌNH CHỮ NHẬT</title>
+</head>
+<body>
+    <canvas width="200px" height="100px" style="border: 3px solid red">
+    </canvas>
+    <div id="output"></div>
+    <script>
+        function Rectangle(length,width) {
+            this.Chieudai = length;
+            this.Chieurong = width;
+            this.acreage = function () {
+                if (length == width) {
+                    alert("bạn nhập lại nha ^^");
+                } else {
+                    return this.Chieudai * this.Chieurong;
+                }
+            }
+            this.perimeter=function () {
+                if (length==width)
+                {
+                    alert("bạn nhập lại nha ^-^");
+                }
+                else {
+                    return (this.Chieudai+this.Chieurong)*2;
+                }
+            }
+        }
+        var input=new Rectangle(10,5);
+        var output=input.acreage();
+        var output01=input.perimeter();
+        //console.log("diện tích="+output+" chu vi="+output01);
+        document.getElementById("output").innerHTML="diện tích="+output+" chu vi="+output01;
+    </script>
+</body>
+</html>

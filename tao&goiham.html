@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tạo và gọi hàm</title>
+</head>
+<body>
+<!--    <script>-->
+<!--        function processConfirm(answer) {-->
+<!--            let result="";-->
+<!--            if (answer)-->
+<!--            {-->
+<!--                result="Excellent. We'll play a nice game of chess";-->
+<!--            }-->
+<!--            else {-->
+<!--                result="maybe later then";-->
+<!--            }-->
+<!--            return result;-->
+<!--        }-->
+<!--        let confirmAnswer=confirm("shall we play a game");-->
+<!--        let theAnswer=processConfirm(confirmAnswer);-->
+<!--        alert(theAnswer);-->
+<!--    </script>-->
+
+    <script>
+        function input(taoham) {
+            var result="";
+            if (taoham)
+            {
+                result="nghia mum";
+            }
+            else {
+                result="mo nguyen";
+            }
+            return result;
+        }
+        var goiham=confirm("dang yeu");
+        var goiinput=input(goiham);
+        alert(goiinput);
+    </script>
+</body>
+</html>

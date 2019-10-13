@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nhiet do</title>
+</head>
+<body>
+    <input id="fahrenheit" type="text" oninput="convert(this.value)">
+    <div id="celcics"></div>
+    <script>
+        function convert(valnum) {
+            valnum=parseFloat(valnum);
+            document.getElementById("celcics").innerHTML=(valnum-32)/1.8;
+        }
+    </script>
+</body>
+</html>

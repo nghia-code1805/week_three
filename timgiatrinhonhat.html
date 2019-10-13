@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mảng</title>
+</head>
+<body>
+<!--    <script>-->
+
+<!--        function minarray(array) {-->
+<!--            var min=array[0];-->
+<!--            for (var i=1;i<array.length;i++)-->
+<!--            {-->
+<!--                if (array[i]<min)-->
+<!--                {-->
+<!--                    min=array[i];-->
+<!--                }-->
+<!--            }-->
+<!--            return min;-->
+<!--        }-->
+<!--        let array=[2,3,8,-4,11,18];-->
+<!--        let min=minarray(array);-->
+<!--        alert(min);-->
+<!--    </script>-->
+
+<script>
+    function maxarray(max1) {
+        var max=max1[0];
+        for (let i=0;i<max1.length;i++)
+        {
+            if (max1[i]>max)
+            {
+                //max1[i]=max;
+                max=max1[i];
+            }
+        }
+        return max;
+    }
+    let array=[3,4,5,6,7,8,9,10,22];
+    let max=maxarray(array);
+    alert(max);
+</script>
+</body>
+</html>

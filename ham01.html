@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--<body>-->
+<!--        <input type="button" id="btn" onclick="alertMessage()" value="click">-->
+<!--<script>-->
+<!--    //bai 1-->
+<!--    function alertMessage(click) {-->
+<!--        click=alert("xin chao");-->
+<!--    }-->
+<!--</script>-->
+<!--</body>-->
+
+<!--<body>-->
+<!--    <script>-->
+
+<!--        //bài 2  không hiểu đề bài-->
+<!--        function goihan(number) {-->
+<!--            let num=0;-->
+<!--            number=num;-->
+<!--            num++;-->
+<!--        }-->
+<!--        let a=1;-->
+<!--        a=goihan();-->
+<!--        alert(a);-->
+<!--    </script>-->
+<!--</body>-->
+
+<body>
+    <script>
+        //bai 3
+        // let ts1,ts2;
+        // function ham(ts1,ts2) {
+        //     if (ts1>ts2)
+        //     {
+        //         alert("ts1 > ts2 ")
+        //     }
+        //     else
+        //     {
+        //         return ts1+ts2;
+        //     }
+        // }
+        // ts1=Number(prompt("enter a ts1"));
+        // ts2=Number(prompt("enter a ts2"));
+        // let ca=ham(ts1,ts2);
+        // alert(ca);
+
+        // bài 4
+        // function addNumber() {
+        //     firsNum=4;
+        //     secondNum=8;
+        //     result=firsNum+secondNum;
+        //     return result;
+        // }
+        // result =0;
+        // result=addNumber();
+        // //let a=addNumber();
+        // alert(result);
+
+        // bài 5
+
+            function newArray(array01,array02) {
+                var index=-1;
+                var input=prompt("enter a word");
+                var array01=["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+                var array02=["Ursa", "Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa", "Major", "Leo"];
+                for (var i=0;i<array01.length;i++)
+                {
+                    if (input===array01[i])
+                    {
+                        index=i;
+                        break;
+                    }
+                }
+                if (index!=-1)
+                {
+                    document.write(array02[index]);
+                }
+                else
+                {
+                    document.write("not found");
+                }
+            }
+        newArray();
+    </script>
+</body>
+</html>

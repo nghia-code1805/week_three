@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nguyen to</title>
+</head>
+<body>
+    <script>
+        function isprime(num) {
+           // var num=[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97];
+            if (num===1)
+            {
+                return false;
+            }
+            else if (num===2)
+            {
+                return true;
+            }
+            else
+            {
+                for (var x=2;x<num;x++)
+                {
+                    if (num%x===0)
+                    {
+                        return false;
+                    }
+                }
+                return true;
+            }
+        }
+        document.write(isprime(3));
+
+
+    </script>
+</body>
+</html>
